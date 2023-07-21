@@ -1,0 +1,1303 @@
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --red: #fa0000;
+    --green: #01db01;
+    --blue: #94cbffef;
+    --lightGrey: #f3f3f3f7;
+    --lightGrey1: #5f5f5f;
+    --darkGrey: #252525f3;
+    --orange: #ffa244;
+    --brown: #dd3000;
+    --fuentePrincipal: 'Noto Sans', sans-serif;
+}
+
+html{
+    font-size: 65.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 14px;
+    font-family: var(--fuentePrincipal);
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h3{
+    font-size: 2.6rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.2rem;
+}
+
+h5{
+    font-size: 1.8rem;
+}
+
+h6{
+    font-size: 1.6rem;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* header */
+.body-scroll body{
+    padding-top: 8.6rem;
+}
+
+.header{
+    background-color: var(--white);
+    padding: 2rem 0;
+}
+
+.imagen-logo{
+    width: 25rem;
+}
+
+@media (min-width:768px){
+    .fijo{
+        left: 0;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        box-shadow: .3rem .3rem .3rem #ffffff;
+    }
+}
+
+@media (min-width:768px){
+    .buscador{
+        border: 1px solid var(--lightGrey);
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        background-color: var(--white);
+        padding: 1.3rem;
+        width: 50rem;
+    }
+}
+
+.buscar-productos{
+    text-align: center;
+    margin: 4rem 0 0 0;
+}
+
+.productos{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:768px){
+    .barra{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width:768px){
+    .menu-responsive{
+        display: none;
+    }
+}
+
+.menu-responsive img{
+    width: 3rem;
+}
+
+.boton-contacto{
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.boton-contacto:hover{
+    cursor: pointer;
+}
+
+.boton-contacto img{
+    height: 2rem;
+}
+
+.boton-contacto strong{
+    text-transform: uppercase;
+}
+
+.boton-contacto a{
+    color: var(--white);
+}
+
+.filtro{
+    display: none;
+}
+/* Navegacion Principal */
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s ease-in-out, opacity 0.5s linear;
+}
+
+@media (min-width:768px){
+    .navegacion{
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.mostrar{
+    visibility: visible;
+    opacity: 1;
+}
+
+.navegacion a{
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+}
+
+.navegacion a:hover{
+    color: var(--red);
+}
+
+.contenido-navegador{
+    max-width: 10rem;
+}
+
+/* Sección: ofertas principales */
+.titulo-superofertas{
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--lightGrey);
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.columns-superofertas-4{
+    margin: 5rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .columns-superofertas-4{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+.header-superoferta{
+    background-color: var(--black);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.header-superoferta h6{
+    color: var(--white);
+    margin: 0;
+    font-weight: 200;
+}
+
+.superoferta{
+    margin-bottom: 2rem;
+}
+
+.codigo{
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.superoferta{
+    margin-bottom: 2rem;
+}
+
+.superoferta__imagen{
+    width: 100%;
+}
+
+.fecha-valida{
+    font-size: 1.2rem;
+    margin: 2rem 0 0 0;
+    color: var(--lightGrey1);
+}
+
+.img-gif{
+    background-image: url(../img/banner-find1.gif);
+    background-repeat: no-repeat;
+    width: 200rem;
+    position: relative;
+}
+
+.banner-right{
+    position: absolute;
+    background-color: var(--lightGrey);
+}
+
+/* Seccion: Maxicombos */
+@media (min-width:768px){
+    .detalle-maxicombo-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.titulo-maxicombo-principal{
+    text-align: center;
+    font-weight: 200;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--lightGrey1);
+}
+
+.quitar-bold{
+    font-weight: 400;
+}
+
+.quitar-bold-fecha{
+    font-weight: 400;
+}
+
+.seccion-maxicombos{
+    margin-top: 10rem;
+}
+
+.contenido-centrado-texto{
+    text-align: center;
+}
+
+.contenido-centrado-texto p{
+    text-transform: uppercase;
+    font-weight: 200;
+    margin: 0;
+}
+
+.contenido-centrado-texto h2{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2.6rem;
+}
+
+.contenido-centrado p{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 200;
+}
+
+.contenido-maxicombo-centrado{
+    text-align: center;
+}
+
+.contenido-maxicombo-centrado h2{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2.6rem;
+}
+
+.contenido-maxicombo-centrado p{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+
+.contenedor-maxicombos{
+    margin: 6rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .contenedor-maxicombos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.maxicombo-principal{
+    margin-bottom: 2rem;
+}
+
+.fecha-maxicombo{
+    text-align: center;
+    margin: 0;
+    color: var(--black);
+}
+
+.fecha-bold{
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer{
+    margin-top: 8rem;
+}
+
+.bg-grey{
+    background-color: var(--lightGrey);
+    padding: 4rem 0 5rem 0;
+}
+
+@media (min-width: 768px){
+    .enlaces-internos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+.logotipo-footer{
+    width: 30rem;
+}
+
+.bold{
+    text-transform: uppercase;
+    color: var(--red);
+    font-size: 1.1rem;
+    margin: 0 0 1rem 0;
+}
+
+.bloque{
+    margin-bottom: 2rem;
+}
+
+
+
+.columns-three-footer{
+    margin: 3rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .columns-three-footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.item{
+    color: var(--black);
+    list-style: none;
+    padding: 0;
+    max-width: 20rem;
+}
+
+.item a{
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.item li{
+    margin: 1rem 0;
+}
+
+.item a:hover{
+    color: var(--red);
+}
+
+.bg-red{
+    background-color: var(--red);
+    padding: 10px 0 100px 0;
+}
+
+.bg-red p{
+    text-align: center;
+    margin: 0;
+    color: var(--white);
+    font-weight: 200;
+}
+
+/* Ofertas */
+.contenido-centrado{
+    max-width: 1000px;
+}
+
+.productos{
+    list-style: none;
+    padding: 0;
+}
+
+.resultados{
+    margin: 2rem 0 0 0;
+    color: var(--lightGrey1);
+}
+
+.bg-blue-imgs{
+    background-color: var(--blue);
+}
+
+.contenido-imgs{
+    max-width: 900px;
+}
+
+@media (min-width:768px){
+    .grid-fondo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.img-maxiPlus{
+    background-image: url(../img/banner-home-left-new.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.img-productos{
+    background-image: url(../img/productos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30rem;
+}
+
+.bg-img-color-fondo{
+    background-color: var(--lightGrey);
+    padding: 2rem 0 2rem 0;
+}
+
+.img-marcas{
+    background-image: url(../img/marcas-participantes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40rem;
+}
+
+.superofertas{
+    margin: 1rem 0 0 0;
+}
+
+@media (min-width:1200px){
+    .superofertas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+.contenido-oferta{
+    background-color: var(--black);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.contenido-oferta h6{
+    margin: 0;
+    color: var(--white);
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+/* Maxicombos */
+.columns-three{
+    margin: 4rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .columns-three{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+.maxicombo{
+    margin-bottom: 4rem;
+}
+
+.header-maxicombo{
+    background-color: var(--black);
+    padding: 2rem 3rem 2rem 3rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.fecha-valida-maxicombo{
+    color: var(--white);
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.maxicombo__imagen{
+    width: 100%;
+}
+
+/* Productos Supermaxi */
+@media (min-width:1200px){
+    .columns-four{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5rem;
+    }
+}
+
+.link-header{
+    background-color: var(--black);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.link-title{
+    color: var(--white);
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.link-code{
+    color: var(--white);
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.producto{
+    margin-bottom: 4rem;
+}
+
+/* recetas de cocinas Supermaxi */
+.titulo-recetas{
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.centrado_recetas_4{
+    max-width: 1100px;
+}
+
+.columnas_recetas_4{
+    margin: 8rem 0 0 0;
+}
+
+@media (min-width:1200px){
+    .columnas_recetas_4{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.receta{
+    margin-bottom: 2rem;
+}
+
+.receta__imagen{
+    width: 20rem;
+}
+
+.receta__contenido{
+    margin: 1rem 0 0 0;
+}
+
+.receta__nombre{
+    margin: 0;
+    font-weight: 400;
+    max-width: 20rem;
+}
+
+.centrado_recetas_3{
+    max-width: 840px;
+}
+
+.columnas_recetas_3{
+    margin: 3rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .columnas_recetas_3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+/* informacion del producto Supermaxi */
+.content-center{
+    max-width: 1100px;
+}
+
+.section{
+    margin: 5rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .columns-two-maxicombo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.content-maxicombo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.border-title{
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+.border-title h4{
+    margin-bottom: 1rem;
+}
+
+.title-maxicombo-contenido{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: var(--lightGrey1);
+    margin: 0rem;
+}
+
+.maxicombo-bold{
+    font-weight: 400;
+}
+
+.border-presentation{
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+.border-presentation div{
+    margin-bottom: 2rem;
+}
+
+.information-producto{
+    margin: 2rem 0 0 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--lightGrey1);
+}
+
+.information-producto h6{
+    margin: 0;
+    font-weight: 200;
+}
+
+.information-producto p{
+    margin: 0;
+}
+
+.fecha{
+    font-weight: 400;
+}
+
+.links{
+    margin-top: 2rem;
+}
+
+@media (min-width:768px){
+    .links{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.button-agregar{
+    font-size: 1.4rem;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 1rem 3rem;
+    border-radius: .8rem;
+    text-transform: uppercase;
+}
+
+.button-share{
+    font-size: 1.4rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: .8rem;
+}
+
+.button-agregar:hover{
+    background-color: var(--lightGrey1);
+}
+
+.button-share:hover{
+    background-color: var(--lightGrey1);
+}
+
+/* Promociones que están relacionadas con el producto */
+.section-inferior{
+    margin: 5rem 0 0 0;
+}
+
+.products{
+    list-style: none;
+    padding: 0;
+}
+
+.promociones{
+    margin: 3rem 0 0 0;
+}
+
+@media (min-width:1200px){
+    .promociones{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+.title{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.title h2{
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.promocion{
+    margin-bottom: 2rem;
+}
+
+/* Contenido: ofertas */
+@media (min-width:768px){
+    .columns-2-oferta{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+    }
+}
+
+.titulo-oferta{
+    font-weight: 200;
+    color: var(--lightGrey1);
+    max-width: 40rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.titulo-centrado{
+    max-width: 30rem;
+}
+
+.titulo-desodorante{
+    max-width: 35rem;
+}
+
+.titulo-deja{
+    max-width: 35rem;
+}
+
+.titulo-rexona{
+    max-width: 40rem;
+}
+
+.titulo-oferta-10{
+    font-weight: 200;
+    color: var(--lightGrey1);
+    margin: 0;
+}
+
+.title-producto-supermaxi{
+    font-weight: 200;
+    color: var(--lightGrey1);
+    max-width: 35rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.offer-2{
+    max-width: 35rem;
+}
+
+.codigo-producto{
+    color: var(--lightGrey1);
+    font-size: 2rem;
+}
+
+.titles-offers{
+    margin: 1rem 0 0 0;
+}
+
+.titles-offers h5{
+    margin: 0;
+    font-weight: 200;
+}
+
+.titulo-cagatorias{
+    max-width: 30rem;
+    line-height: 1.3;
+}
+
+.bajar-titulo-producto{
+    max-width: 35rem;
+    line-height: 1.3;
+}
+
+/* Contenido: productos */
+@media (min-width:768px){
+    .columnas-2-producto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+.producto-one{
+    max-width: 40rem;
+    line-height: 1.3;
+}
+
+
+.producto-2{
+    max-width: 38rem;
+}
+
+.product-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.product-categories{
+    max-width: 40rem;
+}
+
+.product-three{
+    max-width: 35rem;
+}
+
+.categoria-producto{
+    max-width: 20rem;
+}
+
+/* Vinos Supermaxi */
+.bg-vinos{
+    background-color: var(--lightGrey);
+    padding: 3rem 0 3rem 0;
+}
+
+.fondo-vinos{
+    background-image: url(../img//vino.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 25rem;
+}
+
+.title-wine{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5rem 0 0 0;
+}
+
+.columns-four-products-wine{
+    margin: 5rem 0 0 0;
+}
+
+@media (min-width:1200px){
+    .columns-four-products-wine{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+.product-vino__image{
+    width: 100%;
+}
+
+.product-vino{
+    margin-bottom: 4rem;
+}
+
+.information-wine p{
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--lightGrey1);
+    font-weight: 200;
+}
+
+.information-wine strong {
+    font-weight: 400;
+}
+
+.information-wine div{
+    margin: 1rem 0;
+}
+
+.border-title-wine{
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+.border-title-wine h2{
+    margin-bottom: 1rem;
+    color: var(--lightGrey1);
+    font-size: 2.4rem;
+}
+
+@media (min-width:768px){
+    .columns-two-content-wine{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+    }
+}
+
+.center-content{
+    max-width: 40rem;
+}
+
+.product-4{
+    max-width: 35rem;
+}
+
+.title-product{
+    padding: 2rem 0 4rem 0;
+}
+
+.moraje-producto-wine{
+    line-height: 1.2;
+}
+
+.producto-wine-7{
+    max-width: 30rem;
+    line-height: 1.3;
+}
+
+.bajar_caterias{
+    margin: 10rem 0 0 0;
+}
+
+.bg_brown_wines{
+    background-color: var(--brown);
+    padding: 8rem 0 1rem 0;
+}
+
+.icono_vinos{
+    width: 35rem;
+    margin: -5rem auto -5rem auto;
+}
+
+.titulo_inscripcion{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    margin: 0;
+}
+
+.alinear_categorias_wines{
+    display: flex;
+    justify-content: center;
+}
+
+/* Requisitos Laborales */
+.centrado-3-requisitos{
+    max-width: 950px;
+}
+
+.columnas-3-requisitos{
+    margin: 4rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .columnas-3-requisitos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.centrar-img{
+    display: flex;
+    justify-content: center;
+}
+
+.color-blanco{
+    color: var(--white);
+}
+
+.requisito{
+    margin-bottom: 2rem;
+}
+
+.requisito__texto{
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin: 1rem 0 8rem 0;
+}
+
+.bg-lightGrey-requisito{
+    background-color: var(--lightGrey);
+    padding: 2rem;
+}
+
+.bg-orange-requisito{
+    background-color: var(--orange);
+    padding: 2rem;
+}
+
+@media (min-width:768px){
+    .columnas-2-requisitos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.centrado-2-requisitos{
+    max-width: 620px;
+}
+
+.quitar-bold-texto{
+    font-weight: 400;
+}
+
+.texto-4-fundacion{
+    max-width: 20rem;
+}
+
+/* Fundaciones */
+.contenido-centrado-fundaciones{
+    max-width: 1000px;
+}
+
+.columnas-fundaciones-3{
+    margin: 5rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .columnas-fundaciones-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+.fundacion{
+    margin-bottom: 2rem;
+}
+
+.bg-lightGrey-fundacion{
+    background-color: var(--lightGrey);
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+.fundacion__img{
+    width: 8rem;
+    margin: 0 0 2rem 0;
+}
+
+.fundacion__texto--color{
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+    font-size: 1.3rem;
+    color: var(--lightGrey1);
+    line-height: 1.2;
+}
+
+.ultimo-texto{
+    max-width: 25rem;
+}
+
+.primer-texto{
+    max-width: 25rem;
+}
+
+.contenido-fundacion{
+    max-width: 310px;
+}
+
+.ultima-fundacion{
+    margin: 3rem 0 0 0;
+}
+
+/* Formulario de contacto */
+.formulario-socios{
+    background-color: var(--lightGrey);
+    padding: 3rem;
+    margin: 0 auto;
+    width: min(50rem, 100%);
+    margin-top: 20rem;
+}
+
+.title-form{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.text-form{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.color-red{
+    color: var(--red);
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo input{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+.mensajeError{
+    color: var(--red);
+    font-size: 1.2rem;
+}
+
+.mensajeCorrecto{
+    color: var(--green);
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button-ingresar{
+    background-color: var(--red);
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem 5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-ingresar:hover{
+    background-color: var(--darkGrey);
+}
+/* Formulario suscripcion */
+.formulario-vinos{
+    margin: 0 auto;
+    width: min(60rem, 100%);
+    margin-top: 5rem;
+}
+
+.formulario-vinos h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.formulario-vinos p{
+    text-align: center;
+    font-weight: 200;
+    font-weight: 1.3rem;
+}
+
+@media (min-width:768px){
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .campo-vino:nth-child(7){
+        grid-column: 1 / 3;
+    }
+}
+
+.campo-vino{
+    margin-bottom: 2rem;
+}
+
+.campo-vino input{
+    width: 100%;
+    border: 1px solid var(--black);
+    padding: 1rem;
+    font-weight: 200;
+}
+
+.campo-vino select{
+    width: 100%;
+    border: 1px solid var(--black);
+    padding: 1rem;
+    font-weight: 200;
+}
+
+.centrar-boton{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-inscripcion{
+    margin-top: 1rem;
+    background-color: var(--green);
+    border: none;
+    padding: 1rem 2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.errorFormulario{
+    text-align: center;
+}
+
+
+
+
+
+
+
+

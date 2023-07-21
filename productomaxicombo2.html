@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Supermaxi</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="barra">
+            <a href="index.html">
+                <img src="https://www.supermaxi.com/wp-content/uploads/2019/05/supermaxi-logo@2x.png" alt="Logotipo Supermaxi" class="imagen-logo" loading="lazy">
+            </a>
+            <form class="input-search">
+                <input type="search" placeholder="Busca superofertas, maxicombos, productos Supermaxi, vinos y más" class="buscador" id="buscador">
+            </form>
+            <div class="boton-contacto">
+                <img src="https://www.supermaxi.com/wp-content/uploads/2020/03/menu-icon-perfil@2x.png" alt="usuario supermaxi">
+                <a href="contacto.html" class="boton-supermaxi">Mi<strong>super</strong></a>
+            </div>
+            <div class="menu-responsive">
+                <img src="img/barras.svg" class="menu responsive Supermaxi">
+            </div>
+        </div>
+    </header>
+
+    <nav class="contenedor navegacion">
+        <a href="superofertas.html">Superofertas</a>
+        <a href="maxicombos.html">Maxicombos</a>
+        <a href="productos Supermaxi.html">Productos Supermaxi</a>
+        <a href="vinos.html">Vinos</a>
+        <a href="requisitos.html">Trabaje con Nosotros</a>
+        <a href="fundaciones.html">Responsibilidad social</a>
+        <a href="recetas.html">Recetas</a>
+    </nav>
+    <div class="buscar-productos">
+        <ul class="list-productos">
+            <li class="productos">Superofertas</li>
+            <li class="productos">Maxicombos</li>
+            <li class="productos">Productos Supermaxi</li>
+            <li class="productos">Vinos</li>
+            <li class="productos">Recetas</li>
+        </ul>
+    </div>
+
+    <section class="content-center contenedor">
+        <div class="section columns-two-maxicombo">
+            <img src="img/contenido2.jpg" alt="maxicombos Supermaxi">
+            <div class="content-maxicombo">
+                <div class="border-title">
+                    <h4 class="title-maxicombo-contenido"><strong class="maxicombo-bold">Maxicombo |</strong> Compre y lleve gratis</h4>
+                </div>
+                <div class="border-presentation">
+                    <div class="information-producto">
+                        <h6>*Producto bajo sistema de promoción</h6>
+                        <p><strong class="fecha">Válido desde el 20 de julio al 14 de agosto de 2023</strong></p>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="#" class="button-agregar" onclick="mostrarLista();">Agregar lista</a>
+                    <a href="#" class="button-share" onclick="compartir();">Compartir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content-center contenedor">
+        <div class="contenido-centrado-texto section-inferior">
+            <h2>Productos relacionados</h2>
+            <p>Promociones Limitadas ¡Aprovéchalas ahora</p>
+        </div>
+
+        <section>
+            <ul class="products promociones">
+                <li>
+                    <div class="promocion">
+                        <img src="https://www.supermaxi.com/wp-content/uploads/2021/06/7861042545866-300x300.png" alt="promociones Supermaxi">
+                        <div class="title">
+                            <h2>Supermaxi Chifles Largos 200 g</h2>
+                        </div>
+                    </div>
+                </li> <!-- promocion -->
+                <li>
+                    <div class="promocion">
+                        <img src="https://www.supermaxi.com/wp-content/uploads/2021/06/7861042555346-300x300.png" alt="promociones Supermaxi">
+                        <div class="title">
+                            <h2>Supermaxi Chimichurri Doypack 200 g</h2>
+                        </div>
+                    </div>
+                </li> <!-- promocion -->
+                <li>
+                    <div class="promocion">
+                        <img src="https://www.supermaxi.com/wp-content/uploads/2021/06/7861042555421-300x300.png" alt="promociones Supermaxi">
+                        <div class="title">
+                            <h2>Supermaxi Ajo en Pasta Botella 470 g</h2>
+                        </div>
+                    </div>
+                </li> <!-- promocion -->
+                <li>
+                    <div class="promocion">
+                        <img src="https://www.supermaxi.com/wp-content/uploads/2021/06/7861042519973-300x300.png" alt="promociones Supermaxi">
+                        <div class="title">
+                            <h2>Supermaxi Gelatina Frutilla 55 g</h2>
+                        </div>
+                    </div>
+                </li> <!-- promocion -->
+            </ul> <!-- contenedor de promociones relacionados -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="bg-grey">
+            <div class="contenedor enlaces-internos">
+                <img src="https://www.supermaxi.com/wp-content/uploads/2019/05/supermaxi-logo@2x.png" alt="Logotipo Supermaxi" class="logotipo-footer">
+                <section class="bloque">
+                    <h2 class="bold">La empresa</h2>
+                    <ul class="item">
+                        <li><a href="#">Trabaje con Nosotros</a></li>
+                        <li><a href="#">Acerca de Supermaxi</a></li>
+                        <li><a href="#">Responsibilidad Social</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </section>
+                <section class="bloque">
+                    <h2 class="bold">Proveedores y consumidores</h2>
+                    <ul class="item">
+                        <li><a href="#">Quieres ser proveedor de Corporación Favorita</a></li>
+                        <li><a href="#">Facturación Electrónica</a></li>
+                        <li><a href="#">Proveedores</a></li>
+                    </ul>
+                </section>
+                <section class="bloque">
+                    <h2 class="bold">Información de Interés</h2>
+                    <ul class="item">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Convenio de afiliación</a></li>
+                        <li><a href="#">Términos y Condiciones Renueve su Afiliación</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="bg-red">
+            <p>Todos los derechos reservados 2023</p>
+        </div>
+    </footer>
+    
+    <script src="js/contacto.js"></script>
+    <script src="js/responsive.js"></script>
+    <script src="js/contactos-socios.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Supermaxi</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <form class="formulario-socios">
+        <h1 class="title-form">Inicia tu experiencia Supermaxi</h1>
+        <p class="text-form">Ingresa tus datos y descubre el lado <span class="color-red">Super</span> de la vida.</p>
+        <div class="campo campo__obligatorio pasaporte campo-requerido">
+            <input type="text" placeholder="Nro. de cédula o pasaporte"id="pasaporte" class="campo-requerido">
+            <p class="mensajeError"></p>
+        </div>
+        <div class="campo campo__obligatorio password campo-requerido">
+            <input type="password" placeholder="Contraseña" id="password" class="campo-requerido">
+            <p class="mensajeError"></p>
+        </div>
+        <input type="submit" value="Ingresar" class="button-ingresar">
+    </form>
+
+    <script src="js/contacto.js"></script>
+    <script src="js/responsive.js"></script>
+    <script src="js/contactos-socios.js"></script>
+</body>
+</html>
