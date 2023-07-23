@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Supermaxi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,8 +17,9 @@
             <a href="index.html">
                 <img src="https://www.supermaxi.com/wp-content/uploads/2019/05/supermaxi-logo@2x.png" alt="Logotipo Supermaxi" class="imagen-logo" loading="lazy">
             </a>
-            <form class="input-search">
-                <input type="search" placeholder="Busca superofertas, maxicombos, productos Supermaxi, vinos y más" class="buscador" id="buscador">
+            <form class="contenido-search">
+                <input type="search" placeholder="Busca productos, locales, recetas y más" id="buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <div class="boton-contacto">
                 <img src="https://www.supermaxi.com/wp-content/uploads/2020/03/menu-icon-perfil@2x.png" alt="usuario supermaxi">
@@ -111,38 +113,56 @@
 
     <footer class="footer">
         <div class="bg-grey">
-            <div class="contenedor enlaces-internos">
-                <img src="https://www.supermaxi.com/wp-content/uploads/2019/05/supermaxi-logo@2x.png" alt="Logotipo Supermaxi" class="logotipo-footer">
-                <section class="bloque">
-                    <h2 class="bold">La empresa</h2>
-                    <ul class="item">
-                        <li><a href="#">Trabaje con Nosotros</a></li>
-                        <li><a href="#">Acerca de Supermaxi</a></li>
-                        <li><a href="#">Responsibilidad Social</a></li>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
-                    </ul>
-                </section>
-                <section class="bloque">
-                    <h2 class="bold">Proveedores y consumidores</h2>
-                    <ul class="item">
-                        <li><a href="#">Quieres ser proveedor de Corporación Favorita</a></li>
-                        <li><a href="#">Facturación Electrónica</a></li>
-                        <li><a href="#">Proveedores</a></li>
-                    </ul>
-                </section>
-                <section class="bloque">
-                    <h2 class="bold">Información de Interés</h2>
-                    <ul class="item">
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Políticas de privacidad</a></li>
-                        <li><a href="#">Convenio de afiliación</a></li>
-                        <li><a href="#">Términos y Condiciones Renueve su Afiliación</a></li>
-                    </ul>
-                </section>
+            <div class="contenedor">
+                <div class="row-2-footer">
+                    <div class="contenido-logo">
+                        <img src="https://www.supermaxi.com/wp-content/uploads/2019/05/supermaxi-logo@2x.png" alt="Logotipo Supermaxi" class="logotipo-footer">
+                        <div class="seguir-redesSociales">
+                            <p><strong>Síguenos en:</strong></p>
+                            <ul class="list-apps">
+                                <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-brands-youtube fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-footer">
+                        <div class="row-links">
+                            <section class="bloque">
+                                <h2 class="bold">La empresa</h2>
+                                <ul class="item">
+                                    <li><a href="#"><strong>Trabaje con Nosotros</strong></a></li>
+                                    <li><a href="#"><strong>Acerca de Supermaxi</strong></a></li>
+                                    <li><a href="#"><strong>Responsibilidad Social</strong></a></li>
+                                    <li><a href="#"><strong>Preguntas Frecuentes</strong></a></li>
+                                </ul>
+                            </section>
+                            <section class="bloque">
+                                <h2 class="bold">Proveedores y consumidores</h2>
+                                <ul class="item">
+                                    <li><a href="#"><strong>Quieres ser proveedor de Corporación Favorita</strong></a></li>
+                                    <li><a href="#"><strong>Facturación Electrónica</strong></a></li>
+                                    <li><a href="#"><strong>Proveedores</strong></a></li>
+                                </ul>
+                            </section>
+                            <section class="bloque column-3-footer">
+                                <h2 class="bold">Información de Interés</h2>
+                                <ul class="item">
+                                    <li><a href="#"><strong>Términos y Condiciones</strong></a></li>
+                                    <li><a href="#"><strong>Políticas de privacidad</strong></a></li>
+                                    <li><a href="#"><strong>Convenio de afiliación</strong></a></li>
+                                    <li><a href="#"><strong>Términos y Condiciones Renueve su Afiliación</strong></a></li>
+                                    <li><a href="#"><strong>Derechos sobre datos personales</strong></a></li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="bg-red">
-            <p>Todos los derechos reservados 2023</p>
+            <p>Todos los derechos reservados <a href="#"><strong>Corporación Favorita.</strong></a> 2023</p>
         </div>
     </footer>
 
